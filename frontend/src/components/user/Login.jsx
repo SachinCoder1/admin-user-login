@@ -10,7 +10,7 @@ function Login({ signupUser, link }) {
     const { name, value } = e.target;
     setInputValue((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: value, 
     }));
     console.log(inputValue);
   };
