@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 function Login({ signupUser, link }) {
   let navigate = useNavigate();
   const [inputValue, setInputValue] = useState({ email: "", password: "" });
-  const { name, price } = inputValue;
+  const { name } = inputValue;
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputValue((prev) => ({
