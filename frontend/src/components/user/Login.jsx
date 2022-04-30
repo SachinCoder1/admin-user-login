@@ -9,7 +9,7 @@ function Login({ signupUser, link }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInputValue((prev) => ({
-      ...prev,
+      ...prev, 
       [name]: value, 
     }));
     console.log(inputValue);
