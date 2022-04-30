@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { signupUser } from "../../api/Api";
 import Login from "./Login";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function User() {
   let navigate = useNavigate();

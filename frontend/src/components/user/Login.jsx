@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Input from "../../subcomponents/Input";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Login({ signupUser, link }) {
   let navigate = useNavigate();
@@ -19,14 +19,11 @@ function Login({ signupUser, link }) {
     const response = await signupUser(inputValue);
     console.log(response)
     const json = await response;
-    // console.log(json)
     if (json.success) {
       localStorage.setItem("token", json.authToken);
       console.log("Login successful");
       navigate(link);
-      // console.log(json.authToken)
     } else {
-      // props.showAlert('Invalid credentials', 'danger')
       console.log("Please enter valid email and password");
     }
   };
